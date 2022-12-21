@@ -1,0 +1,14 @@
+
+
+#!/bin/bash
+
+echo "Welcome to GuessUsernameTicTacToe!"
+echo "Please enter a username to guess:"
+read username
+
+while [ $username != "TicTacToe" ]; do
+  echo "Sorry, wrong username! Please try again:"
+  read username
+done
+
+echo "Congratulations, you guessed the username correctly!"
